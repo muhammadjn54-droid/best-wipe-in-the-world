@@ -6,6 +6,7 @@ import Layout from './layout/Layout';
 import NotFound from './pages/NotFound';
 import BlobPage from './pages/Blog/BlobPage';
 import ContactPage from './pages/Contact/ContactPage';
+import PropertyInfo from './pages/Info page/PropertyInfo';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const App = () => {
         {
           path: '/contact',
           element: <ContactPage />
+        },
+        {
+          path: '/property/:id',
+          element: <PropertyInfo />
         },
         {
           path: '/blog',
