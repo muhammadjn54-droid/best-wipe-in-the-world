@@ -1,55 +1,66 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 export default function UsefulArticles() {
+  const { t } = useTranslation();
+  const sectionRef = useScrollAnimation();
+
   const articles = [
     {
       id: 1,
       type: "image",
       title: "Discover Architecture",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80",
     },
     {
       id: 2,
       type: "text",
       date: "Jule 03, 2022",
       title: "Discover Architecture",
-      description: "Projects for many large domestic and foreign corporations, enterprises in many fields such",
+      description:
+        "Projects for many large domestic and foreign corporations, enterprises in many fields such",
     },
     {
       id: 3,
       type: "image",
       title: "Discover Architecture",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     },
   ];
 
   return (
-    <section className="w-full bg-[#272727] text-white py-20 px-6 md:px-16">
+    <section
+      ref={sectionRef}
+      className="fade-in-on-scroll w-full bg-[#272727] text-white py-20 px-6 md:px-16"
+    >
       <div className="max-w-6xl mx-auto">
-        
-        <div className="flex justify-between items-end mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-wide">
+        <div className="flex justify-between items-end mb-12 animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-wide section-heading">
             Useful articles
           </h2>
-          <a 
-            className="text-xs text-gray-400 hover:text-[#FCD34D] transition duration-300 flex items-center gap-2 uppercase tracking-widest font-medium"
-          >
+          <a className="text-xs text-gray-400 hover:text-[#FCD34D] transition duration-300 flex items-center gap-2 uppercase tracking-widest font-medium cursor-pointer">
             View all articles
             <span className="text-sm">➔</span>
           </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {articles.map((item) => (
-            <div key={item.id} className="relative w-full h-[380px] overflow-hidden group">
-              
+          {articles.map((item, index) => (
+            <div
+              key={item.id}
+              className="card-item relative w-full h-[380px] overflow-hidden group animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
               {item.type === "image" ? (
                 <>
-                  <div className="w-full h-full bg-zinc-800 relative">
-                    <img 
-                      src={item.image} 
-                      alt={item.title} 
-                      className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                  <div className="card-image w-full h-full bg-zinc-800 relative">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   </div>
@@ -60,32 +71,28 @@ export default function UsefulArticles() {
                   </div>
                 </>
               ) : (
-                <div className="w-full h-full border border-[#FCD34D]/30 bg-[#2d2d2d] p-8 flex flex-col justify-between">
+                <div className="w-full h-full border border-[#FCD34D]/30 bg-[#2d2d2d] p-8 flex flex-col justify-between transition-all duration-300 hover:border-[#FCD34D]">
                   <div>
                     <p className="text-xs text-gray-500 mb-3 uppercase tracking-wider">
                       {item.date}
                     </p>
-                    <h3 className="text-xl font-bold tracking-wide mb-4">
+                    <h3 className="text-xl font-bold tracking-wide mb-4 section-heading">
                       {item.title}
                     </h3>
                     <p className="text-xs text-gray-400 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
-                  
-                  <a 
-                    className="text-xs text-[#FCD34D] hover:text-white font-semibold uppercase tracking-widest flex items-center gap-2 transition duration-300"
-                  >
+
+                  <a className="text-xs text-[#FCD34D] hover:text-white font-semibold uppercase tracking-widest flex items-center gap-2 transition duration-300 cursor-pointer">
                     Learn more
                     <span className="text-sm">➔</span>
                   </a>
                 </div>
               )}
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

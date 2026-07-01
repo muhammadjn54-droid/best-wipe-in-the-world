@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import bg7 from "../assets/7.png"; 
 
 export default function ContactUs() {
+  const { t } = useTranslation();
   return (
     <section 
       className="w-[95%] m-auto bg-cover bg-center bg-no-repeat text-black text-center py-20 relative overflow-hidden flex items-center justify-center min-h-[350px]"

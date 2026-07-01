@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import img13 from "../assets/13.png";
 import img14 from "../assets/14.png";
 const ServicesSection = () => {
+  const { t } = useTranslation();
   return (
     <section className=" py-16 px-8 md:px-24 text-white">
       <div className="flex justify-between items-end mb-12">

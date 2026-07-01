@@ -1,56 +1,129 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import footer from "../pages/assets/Logo (24).png";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+
 export default function Footer() {
+  const { t } = useTranslation();
+  const footerRef = useScrollAnimation();
+
   return (
-    <footer>
-      <div className="flex items-center justify-center ">
-        <img src={footer} alt="DubaiRealty" />
+    <footer ref={footerRef} className="fade-in-on-scroll">
+      <div className="flex items-center justify-center animate-fade-in">
+        <img
+          src={footer}
+          alt="DubaiRealty"
+          className="hover:opacity-80 transition duration-300"
+        />
       </div>
 
       <div className="lg:flex justify-between w-[95%] mk ">
-        <div className="par">
-          <h1 className=" font-bold text-gray-500">Buy</h1>
-          <p className="text-gray-500">Apartment in Dubai</p>
-          <p className="text-gray-500">House in Dubai</p>
-          <p className="text-gray-500">Apartments in Dubai</p>
-          <p className="text-gray-500">Loft in Dubai</p>
-          <p className="text-gray-500">Penthouse in Dubai</p>
-          <p className="text-gray-500">Villa in Dubai</p>
+        <div className="par animate-fade-in-up">
+          <h1 className=" font-bold text-gray-500">{t("footer.buy")}</h1>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.apartment_dubai")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.house_dubai")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.apartments_dubai")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.loft_dubai")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.penthouse_dubai")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.villa_dubai")}
+          </p>
         </div>
-            <div className=" lg:par">
-          <h1 className=" font-bold text-gray-500">Services</h1>
-          <p className="text-gray-500">Property management in Dubai, UAE</p>
-          <p className="text-gray-500">Sell ​​property in Dubai, UAE</p>
-          <p className="text-gray-500">Rent property in Dubai, UAE</p>
-          <p className="text-gray-500">Investments in Dubai, UAE</p>
-          <p className="text-gray-500">Real estate for cryptocurrency in Dubai</p>
-          <p className="text-gray-500">Moving to Dubai, UAE</p>
+        <div
+          className=" lg:par animate-fade-in-up"
+          style={{ animationDelay: "0.1s" }}
+        >
+          <h1 className=" font-bold text-gray-500">{t("footer.services")}</h1>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.property_management")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.sell_property")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.rent_property")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.investments")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.real_estate_crypto")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.moving_dubai")}
+          </p>
         </div>
-        <div className="par">
-          <h1 className=" font-bold text-gray-500">Information</h1>
-          <p className="text-gray-500">Video</p>
-          <p className="text-gray-500">Podcasts</p>
-          <p className="text-gray-500">Laws</p>
-          <p className="text-gray-500">Questions and answers</p>
-          <p className="text-gray-500">Books</p>
-          <p className="text-gray-500">Articles</p>
+        <div
+          className="par animate-fade-in-up"
+          style={{ animationDelay: "0.2s" }}
+        >
+          <h1 className=" font-bold text-gray-500">
+            {t("footer.information")}
+          </h1>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.video")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.podcasts")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.laws")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.questions_answers")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.books")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.articles")}
+          </p>
         </div>
-        <div className="par">
-          <h1 className=" font-bold text-gray-500">About company</h1>
-          <p className="text-gray-500">Jobs </p>
-          <p className="text-gray-500">Story</p>
-          <p className="text-gray-500">Licenses</p>
-          <p className="text-gray-500">Why are we</p>
-          <p className="text-gray-500">Real estate agency</p>
+        <div
+          className="par animate-fade-in-up"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <h1 className=" font-bold text-gray-500">
+            {t("footer.about_company")}
+          </h1>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.jobs")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.story")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.licenses")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.why_us")}
+          </p>
+          <p className="text-gray-500 hover:text-[#FCD34D] transition duration-300 cursor-pointer">
+            {t("footer.real_estate_agency")}
+          </p>
         </div>
-        <div className="par">
-          <h1 className=" font-bold text-gray-500">Contact</h1>
-          <p className="text-gray-500">964 Worthington Drive</p>
-          <p className="text-gray-500">Dubai, UAE</p>
-          <p className="text-gray-500">dubairealty@mail.com</p>
-          <button className="button-primary">Book a consultation</button>
+        <div
+          className="par animate-fade-in-up"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <h1 className=" font-bold text-gray-500">{t("footer.contact")}</h1>
+          <p className="text-gray-500">{t("footer.address_line")}</p>
+          <p className="text-gray-500">{t("footer.city")}</p>
+          <p className="text-gray-500">{t("footer.email_address")}</p>
+          <button className="button-primary btn-hover-lift">
+            {t("footer.book_consultation")}
+          </button>
         </div>
-    
       </div>
     </footer>
   );

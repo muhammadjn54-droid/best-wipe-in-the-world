@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MethodsSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-[60%] m-auto text-gray-300 py-16 px-8 md:px-24">
       <div className="max-w-3xl">

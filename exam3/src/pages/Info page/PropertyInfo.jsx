@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -8,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function PropertyInfo() {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [item, setItem] = useState(null);
 
@@ -31,7 +33,6 @@ export default function PropertyInfo() {
   return (
     <div className="min-h-screen bg-[#1f1f1f] text-white p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Swiper */}
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
@@ -49,7 +50,6 @@ export default function PropertyInfo() {
           ))}
         </Swiper>
 
-        {/* Images Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           {item.images?.map((image) => (
             <img
@@ -61,7 +61,6 @@ export default function PropertyInfo() {
           ))}
         </div>
 
-        {/* Information */}
         <div className="mt-8">
           <h1 className="text-4xl font-bold">{item.name}</h1>
 

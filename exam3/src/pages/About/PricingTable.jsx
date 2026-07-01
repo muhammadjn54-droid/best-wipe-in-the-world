@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function PricingTable() {
+  const { t } = useTranslation();
   const features = [
     { name: "Real estate advertising", complete: true, partial: true },
     { name: "Search for tenants", complete: true, partial: true },

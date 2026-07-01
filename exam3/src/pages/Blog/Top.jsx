@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Top({ title = "Blog", onSearch }) {
+  const { t } = useTranslation();
   return (
     <div className="text-white py-8 px-4 md:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       

@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "buy": "BUY",
+    "book": "Book a consultation"
+  },
+  "homePage": {
+    "hero_subtitle": "Lorem Ipsum",
+    "hero_title_1": "Welcome Home",
+    "hero_title_2": "To",
+    "hero_title_3": "Luxury",
+    "book_consultation": "Book a consultation",
+    "prev": "Prev",
+    "next": "Next",
+    "our_expertise": "Our expertise",
+    "dream_title": "\"The best apartment in Dubai\" we will find your dream",
+    "dream_text": "We specialize in luxury real estate in Dubai, offering premium properties with exceptional views and world-class amenities.",
+    "latest_projects": "Latest projects",
+    "view_all": "View all",
+    "testimonials": "What our clients say",
+    "faq": "Frequently Asked Questions",
+    "articles": "Articles",
+    "videos": "Videos",
+    "useful_articles": "Useful Articles",
+    "contact_us": "Contact us"
+  },
+  "cardSwiper": {
+    "apartment": "Apartment",
+    "house": "House",
+    "villa": "Villa",
+    "penthouse": "Penthouse",
+    "all": "All"
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "client_name": "Client Name",
+    "verified": "Verified Client"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What types of properties do you offer?",
+    "a1": "We offer luxury apartments, villas, penthouses, and commercial properties across Dubai.",
+    "q2": "What is the average price range?",
+    "a2": "Our properties range from 500K AED to 10M+ AED depending on location and amenities.",
+    "q3": "Do you offer furnished apartments?",
+    "a3": "Yes, we offer both furnished and unfurnished properties to meet your needs.",
+    "q4": "What is your process for buying property?",
+    "a4": "Our expert team guides you through every step from property search to final purchase."
+  },
+  "articles": {
+    "title": "Latest Articles",
+    "featured": "Featured",
+    "read_more": "Read more"
+  },
+  "aboutPage": {
+    "rent": "Rent",
+    "furnished_apartments": "Furnished Apartments",
+    "in_dubai": "in Dubai",
+    "about_us": "About Us",
+    "our_story": "Our Story",
+    "vision": "Vision",
+    "mission": "Mission"
+  },
+  "contentPage": {
+    "welcome": "Welcome to Dubai Realty",
+    "description": "We are a leading real estate company specializing in luxury properties in Dubai. With years of experience and expert knowledge, we help clients find their dream homes."
+  },
+  "gallerySection": {
+    "gallery": "Gallery",
+    "view_property": "View Property"
+  },
+  "statsAndContent": {
+    "years_experience": "Years of Experience",
+    "happy_clients": "Happy Clients",
+    "properties_sold": "Properties Sold",
+    "luxury_villas": "Luxury Villas"
+  },
+  "contactPage": {
+    "contact": "Contact",
+    "address": "Dubai, UAE",
+    "full_address": "260 King Str, 05th Floor, Utral Hosue Building, Dubai, VIC 3000, UAE",
+    "phone": "+99 (0) 344 956 4050",
+    "email": "Email",
+    "email_address": "info@sparch.co",
+    "follow_us": "Follow us",
+    "work_hours": "Work Hours",
+    "work_hours_time": "Monday - Friday : 08h00 - 17h30",
+    "send_message": "Send Message"
+  },
+  "contactForm": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "required": "This field is required"
+  },
+  "blogPage": {
+    "blog": "Blog",
+    "add_property": "Add Property",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "all_properties": "All Properties",
+    "sort_by": "Sort by"
+  },
+  "footer": {
+    "buy": "Buy",
+    "apartment_dubai": "Apartment in Dubai",
+    "house_dubai": "House in Dubai",
+    "apartments_dubai": "Apartments in Dubai",
+    "loft_dubai": "Loft in Dubai",
+    "penthouse_dubai": "Penthouse in Dubai",
+    "villa_dubai": "Villa in Dubai",
+    "services": "Services",
+    "property_management": "Property management in Dubai, UAE",
+    "sell_property": "Sell property in Dubai, UAE",
+    "rent_property": "Rent property in Dubai, UAE",
+    "investments": "Investments in Dubai, UAE",
+    "real_estate_crypto": "Real estate for cryptocurrency in Dubai",
+    "moving_dubai": "Moving to Dubai, UAE",
+    "information": "Information",
+    "video": "Video",
+    "podcasts": "Podcasts",
+    "laws": "Laws",
+    "questions_answers": "Questions and answers",
+    "books": "Books",
+    "articles": "Articles",
+    "about_company": "About company",
+    "jobs": "Jobs",
+    "story": "Story",
+    "licenses": "Licenses",
+    "why_us": "Why are we",
+    "real_estate_agency": "Real estate agency",
+    "contact": "Contact",
+    "address_line": "964 Worthington Drive",
+    "city": "Dubai, UAE",
+    "email_address": "dubairealty@mail.com",
+    "book_consultation": "Book a consultation"
+  },
+  "videos": {
+    "title": "Videos",
+    "play": "Play Video"
+  },
+  "section": {
+    "contact_title": "Be in touch with us",
+    "contact_subtitle": "Get in touch with us today",
+    "send": "Send",
+    "name_placeholder": "Your Name",
+    "email_placeholder": "Your Email",
+    "subject_placeholder": "Subject"
+  },
+  "usefulArticles": {
+    "title": "Useful Articles",
+    "read_more": "Read more"
+  },
+  "blogPage": {
+    "blog": "Blog",
+    "properties": "Properties",
+    "add_property": "Add Property",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search properties...",
+    "filter": "Filter",
+    "all_properties": "All Properties",
+    "sort_by": "Sort by",
+    "name": "Property Name",
+    "price": "Price",
+    "location": "Location",
+    "type": "Type",
+    "confirm_delete": "Are you sure?",
+    "delete_confirm": "Delete this property?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Previous"
+  }
+}
